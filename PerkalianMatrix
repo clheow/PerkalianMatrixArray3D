@@ -1,8 +1,8 @@
 import numpy as np
 
-print("PERKALIAN MATRIKS ARRAY 3 DIMENSI")
+print("PERKALIAN MATRIX ARRAY 3 DIMENSI")
 
-n = int(input("Jumlah matriks: "))
+n = int(input("Jumlah Matrix: "))
 baris = int(input("Jumlah baris: "))
 kolom = int(input("Jumlah kolom: "))
 
@@ -12,18 +12,18 @@ B = []
 print("\nMasukkan Matrix A:")
 for i in range(n):
     print("Matrix ke-", i + 1)
-    matriks = []
+    matrix = []
     for j in range(baris):
-        matriks.append(list(map(int, input().split())))
-    A.append(matriks)
+        matrix.append(list(map(int, input().split())))
+    A.append(matrix)
 
 print("\nMasukkan Matrix B:")
 for i in range(n):
     print("Matrix ke-", i + 1)
-    matriks = []
+    matrix = []
     for j in range(baris):
-        matriks.append(list(map(int, input().split())))
-    B.append(matriks)
+        matrix.append(list(map(int, input().split())))
+    B.append(matrix)
 
 A = np.array(A)
 B = np.array(B)
